@@ -1,0 +1,21 @@
+.movie-card-porId {
+    flex: 1 1 100%; /* Ajusta el tamaño de la tarjeta al 100% del contenedor */
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 15px;
+    align-items: center; /* Centra horizontalmente los elementos */
+    justify-content: center; /* Centra verticalmente los elementos */
+}
+.movie-card-porId img {
+    width: 30rem;
+    height: 30rem;
+}
+
+.detalle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}

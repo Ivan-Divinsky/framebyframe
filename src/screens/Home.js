@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "../components/Navbar/index";
+import Footer from '../components/Footer/index';
 import "./style.css";
+
 
 function Home() {
     
@@ -10,9 +12,7 @@ function Home() {
   
         <h1>Home</h1>
   
-        <footer>
-          <p>Copyright © Dashboard 2022</p>
-        </footer>
+        <Footer/>
       </div>
     );
   }

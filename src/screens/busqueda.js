@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar/index";
+import Footer from "../components/Footer/index";
 import "./style.css";
 
 function busqueda() {
@@ -10,9 +11,7 @@ function busqueda() {
   
         <h1>Resultado de busqueda</h1>
   
-        <footer>
-          <p>Copyright © Dashboard 2022</p>
-        </footer>
+        <Footer/>
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar/index";
+import Footer from '../components/Footer/index';
 import "./style.css";
 
 function detalle() {
@@ -10,9 +11,7 @@ function detalle() {
   
         <h1>Detalle</h1>
   
-        <footer>
-          <p>Copyright © Dashboard 2022</p>
-        </footer>
+        <Footer/>
       </div>
     );
   }

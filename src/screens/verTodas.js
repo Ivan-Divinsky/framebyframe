@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar/index";
+import Footer from "../components/Footer/index";
 import "./style.css";
 
 function verTodas() {
@@ -10,9 +11,7 @@ function verTodas() {
   
         <h1>Ver todas</h1>
   
-        <footer>
-          <p>Copyright © Dashboard 2022</p>
-        </footer>
+        <Footer/>
       </div>
     );
   }

@@ -7,6 +7,10 @@ function Navbar() {
   return (
     <nav>
 
+      <div className="logo">
+        <img src="/img/logoFramebyFrame.jpeg" alt=""/>
+      </div>
+
       <ul className="main-nav">
         <Link to={`/`}>
           <MainNav titulo = {"Home"}/>

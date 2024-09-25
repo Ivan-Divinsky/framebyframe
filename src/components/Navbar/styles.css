@@ -9,6 +9,13 @@ nav{
     color: #fff
 }
 
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 250px;
+}
+
 nav ul {
     display: flex;
     flex-direction: row;
@@ -30,7 +37,7 @@ nav ul {
 }
 
 .user img {
-    width: 30px;
+    width: 50px;
     border-radius: 90%;
     margin-left: 10px;
 }

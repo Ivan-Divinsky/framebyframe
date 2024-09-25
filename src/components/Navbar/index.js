@@ -20,8 +20,16 @@ function Navbar() {
           <MainNav titulo = {"About Us"}/>
         </Link>
 
-        <Link to={`/personajes`}>
-          <MainNav titulo = {"Personajes"}/>
+        <Link to={`/Tusfavoritos`}>
+          <MainNav titulo = {"Favoritos"}/>
+        </Link>
+
+        <Link to={`/genero/popular`}>
+          <MainNav titulo = {"Ver mas populares"}/>
+        </Link>
+
+        <Link to={"/genero/top_rated"}>
+          <MainNav titulo = {"Ver mas mejor valoradas"}/>
         </Link>
 
       </ul>

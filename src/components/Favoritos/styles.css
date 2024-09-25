@@ -1,0 +1,20 @@
+.movies-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 5px;
+    overflow: hidden; /* Add this line to hide the content that overflows */
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    flex-wrap: wrap;
+}
+
+.noHayFav {
+    font-size: 5rem;
+    color: black ;
+    text-align: center;
+    margin-top: 150px;
+}

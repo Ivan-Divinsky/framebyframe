@@ -3,7 +3,7 @@ import { withRouter } from "react-router-dom";
 import "./styles.css";
 import PeliculaDetalle from "../PeliculaDetalle/index";
 
-class PersonajeXId extends Component {
+class peliculaXId extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -31,7 +31,7 @@ class PersonajeXId extends Component {
                 this.setState({ pelicula: data});
             })
             .catch((error) =>
-                console.error("Error al obtener los datos del personaje:", error)
+                console.error("Error al obtener los datos del pelicula:", error)
             );
     }
 
@@ -55,4 +55,4 @@ class PersonajeXId extends Component {
     }
 }
 
-export default withRouter(PersonajeXId);
+export default withRouter(peliculaXId);

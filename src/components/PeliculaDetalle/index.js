@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./styles.css";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 class Pelicula extends Component {
   constructor(props) {
@@ -18,39 +18,7 @@ class Pelicula extends Component {
     // this.agregarFavorito = this.agregarFavorito.bind(this);
     // this.seleccionada = this.seleccionada.bind(this);
   }
-  seleccionada() {
-    this.setState({
-      seleccionada: this.state.seleccionada === false ? true : false,
-    });
-  }
   
-  /* 
-  agregarFavorito() {
-    const { listaFavoritos, favorito, pelicula } = this.state;
-
-    let nuevaListaFavoritos = [...listaFavoritos];
-
-    if (favorito) {
-      nuevaListaFavoritos.push(pelicula);
-    } else {
-      nuevaListaFavoritos = nuevaListaFavoritos.filter(
-        (item) => item.id !== pelicula.id
-      );
-    }
-
-    localStorage.setItem(pelicula.id, JSON.stringify(nuevaListaFavoritos));
-
-    this.setState({
-      listaFavoritos: nuevaListaFavoritos,
-      favorito: !favorito,
-      colorFavorito:
-        this.state.colorFavorito === "#909399" ? "#f4e400" : "#909399",
-    });
-  }
-
-  */
-
-  /* */
 
   agregarFavorito(id){
     const favoritosStorage = localStorage.getItem('favoritos');
@@ -106,15 +74,23 @@ class Pelicula extends Component {
         <h4>Duracion: {pelicula.runtime} minutos</h4>
         <h4>Rating: {pelicula.vote_average.toFixed(1)}</h4>
         <h4>Sinopsis: {pelicula.overview}</h4>
-        
 
-        <FontAwesomeIcon
-          icon={faStar}
-          className="iconoFavoritoo"
-          style={{ color: colorFavorito }}
-          onClick={this.agregarFavorito}
-        />
-        </div>
+        <button
+          onClick={() => 
+            this.state.favorito ? 
+            this.sacarFavorito(this.state.pelicula.data.id) :
+            this.agregarFavorito(this.state.pelicula.data.id)
+          } 
+        >Favorito</button>
+        
+        
+        {/* <FontAwesomeIcon 
+          icon={faStar} 
+          className="iconoFavoritoo" 
+          style={{ color: colorFavorito }} 
+          onClick={() => this.agregarFavorito(this.state.pelicula.id) } 
+        /> */}
+      </div>
       </div>
     )
       

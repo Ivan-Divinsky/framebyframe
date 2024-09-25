@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./styles.css";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 class Pelicula extends Component {
   constructor(props) {
@@ -18,7 +18,6 @@ class Pelicula extends Component {
     };
     this.muestraDescripcion = this.muestraDescripcion.bind(this);
     //this.agregarFavorito = this.agregarFavorito.bind(this);
-    //this.seleccionada = this.seleccionada.bind(this);
   }
 
   muestraDescripcion() {
@@ -26,12 +25,6 @@ class Pelicula extends Component {
     this.setState({
       mostrarDescripcion: !this.state.mostrarDescripcion,
       verMas: this.state.verMas === "Ver mas" ? "Ver menos" : "Ver mas",
-    });
-  }
-
-  seleccionada() {
-    this.setState({
-      seleccionada: this.state.seleccionada === false ? true : false,
     });
   }
 
@@ -122,7 +115,7 @@ class Pelicula extends Component {
         <img className="movieImg" src={`https://image.tmdb.org/t/p/w342/${data.poster_path}`} alt={data.title} />
 
         <div className="movie-info"> 
-        <Link onClick={this.selectxId} to = {`/pelicula/id/${data.id}` }>
+        <Link to = {`/pelicula/id/${data.id}` }>
           <h4 >{data.title}</h4>
         </Link>
         <button className= "BotonDescripcion" onClick={this.muestraDescripcion}>

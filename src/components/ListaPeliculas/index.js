@@ -49,16 +49,16 @@ class listaPeliculas extends Component {
             <div>
                 <h2>Películas Populares</h2>
                 <div className="movies-container">
-                {peliculasPopulares.map((personaje) => {
-                        return <Pelicula key={personaje.id} data={personaje} />;
+                {peliculasPopulares.map((pelicula) => {
+                        return <Pelicula key={pelicula.id} data={pelicula} />;
                     })}
                 </div>
                 <Link to="/genero/popular"><button><p>Ver más</p></button></Link>
                 
                 <h2>Películas Mejor Valoradas</h2>
                 <div className="movies-container">
-                {peliculasTopRated.map((personaje) => {
-                        return <Pelicula key={personaje.id} data={personaje} />;
+                {peliculasTopRated.map((pelicula) => {
+                        return <Pelicula key={pelicula.id} data={pelicula} />;
                     })}
                 </div>
                 
